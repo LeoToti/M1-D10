@@ -65,8 +65,89 @@ function bubble_SortMM()
                 let primo = x.shift()
                 let ultimo = x.pop()
                 console.log(primo, ultimo)
+
                 }
 
 
+                /*let matrix = function() {
+                    var matrix1 = [[],[],[],[],[]];
+                    for(var i=0; i<matrix.length; i++) {
+                        let num = Math.floor(Math.random()*100+1)
+                        matrix1[i].push
+                     
+                    }
+                 
+                 return matrix1
+
+                }*/
+
+                let get2Arrays = function(x,y){
+                    if(x.length>y.length){
+                        return x
+                    }
+                    else {
+
+                    return y
+                }
+
+                }
+
+
+                let arraySum = function(x,y) {
+                    let countA = 0
+                    let countB = 0
+                    for ( i=0; i<x.length;i++ ){
+                        countA += x[i]
+
+
+                    }
+                    for ( i=0; i<y.length;i++ ){
+                        countB += y[i]
+
+
+                    }
+                    if(countA>countB){
+                        console.log("first is bigger")
+                    }
+                    else {
+                        console.log("second is bigger")
+                    }
+
+
+                }
+
+                let cont = document.getElementById('container')
+                let td = document.getElementsByTagName('td')
+                
+                let stamp = function(){
+                    for ( i=0; i<td.length;i++ ){
+                        let ciao = td[i].innerText
+                        console.log(ciao)
+
+                    }
+
+                }
+
+                let changeH1 = function(txt) {
+                    let h1 = document.getElementsByTagName("h1")[0]
+                    h1.innerHTML = txt
+
+                }
+
+                let addExRow = function(){
+                    let trx = document.createElement("tr");
+                    let table = document.getElementById("table")
+                    table.appendChild(trx)
+                }
+
+                let addClass = function(){
+                    
+                }
+
+
+
+
+            
+                
 
            
