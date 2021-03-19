@@ -156,6 +156,18 @@ function bubble_SortMM()
                     }
                 }
 
+                window.onload = function (){
+                    console.log("Page is Loaded Correctly")
+                }
+
+                let addElementToUl = function(txt){
+                    let li = document.createElement("li")
+                    let txt = document.createTextNode(txt)
+                    li.appendChild(txt)
+                    document.getElementById("ul1").appendChild(li)
+
+                }
+
 
 
 
