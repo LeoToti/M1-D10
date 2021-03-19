@@ -160,13 +160,38 @@ function bubble_SortMM()
                     console.log("Page is Loaded Correctly")
                 }
 
-                let addElementToUl = function(txt){
+                let addElementToUl = function(txt1){
                     let li = document.createElement("li")
-                    let txt = document.createTextNode(txt)
+                    let txt = document.createTextNode(txt1)
                     li.appendChild(txt)
                     document.getElementById("ul1").appendChild(li)
 
                 }
+
+                let emptylist = function(id){
+
+                    let myList = document.getElementById(id);
+                    myList.innerHTML = '';  
+
+                }
+
+                let hider = function () {
+                    let img = document.getElementsByTagName("img")
+                    for ( i=0; i<img.length;i++ ){
+                        img[i].classList.add("hider")
+
+                    }
+                }
+
+                let tHider = function () {
+                    let tables = document.getElementsByTagName("table")
+                    for ( i=0; i<tables.length;i++ ){
+                        tables[i].classList.add("hider")
+
+                    }
+                }
+
+                
 
 
 
