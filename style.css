@@ -1,0 +1,83 @@
+table, th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+    
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+
+  table td {
+    border-color: green ;
+    border-bottom-color: red 
+
+    
+}
+
+
+  div {
+      margin-bottom: 50px;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  body {
+      max-width: 90%;
+      margin:0 auto;
+      font-family: 'Syne Mono', monospace;
+
+  }
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(191, 24, 52);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a {
+      border: 2px;
+  }
+
+  p {
+    margin: 35px;
+  }
+
+  .font-style{
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .hider {
+      display: none;
+  }
+
+  .trColor {
+      border-color: red;
+      border-style: dotted
+  }
+
+
+
