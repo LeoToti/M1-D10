@@ -186,7 +186,11 @@ function bubble_SortMM()
                 let tHider = function () {
                     let tables = document.getElementsByTagName("table")
                     for ( i=0; i<tables.length;i++ ){
-                        tables[i].classList.add("hider")
+                        if ( tables[i].classList.contains('hider') ) {
+                            tables[i].classList.remove("hider")
+                          } else {
+                            tables[i].classList.add("hider")
+                          }
 
                     }
                 }
