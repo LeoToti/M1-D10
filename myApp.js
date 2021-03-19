@@ -140,9 +140,23 @@ function bubble_SortMM()
                     table.appendChild(trx)
                 }
 
-                let addClass = function(){
-                    
+                let addClass = function(className){
+                    let tr = document.getElementsByTagName("tr")
+                    for ( i=0; i<tr.length;i++ ){
+                        tr[i].classList.add(className)
+                    }
+
                 }
+
+                let adding = function () {
+                    nodeList = document.links
+                    for ( i=0; i<nodeList.length;i++ ){
+                        nodeList[i].style.backgroundColor('red')
+
+                    }
+                }
+
+
 
 
 

@@ -1,5 +1,5 @@
-table, th, td {
-    border: 1px solid black;
+table, th {
+    border: 3px solid black;
     border-radius: 10px;
     
   }
@@ -11,8 +11,10 @@ table, th, td {
   }
 
   table td {
+      border: 3px dotted;
     border-color: green ;
     border-bottom-color: red 
+    
 
     
 }
