@@ -158,6 +158,36 @@ function bubble_SortMM()
 
                 window.onload = function (){
                     console.log("Page is Loaded Correctly")
+                    let celNum = document.getElementById("table").rows[0].cells.length
+                    console.log(celNum)
+
+                    document.addEventListener('mouseover',function(event){
+                        if (event.target===document.querySelector('a')){
+                            let href = document.querySelector('a').href
+                            alert(href)
+
+                        }
+                        
+
+
+                    })
+
+                    document.addEventListener('mouseover',function(event){
+                        
+                        let tds = document.querySelectorAll('td')
+                        for ( i=0; i<tds.length;i++ ){
+                            if (event.target === tds[i] ){
+                                event.target.style.borderColor = "orange"
+                                
+                            }
+                            setTimeout(function() {
+                                event.target.style.borderColor = "";
+                              }, 2000)
+                        }
+                        
+                    }, false)
+                        
+                    
                 }
 
                 let addElementToUl = function(txt1){
@@ -178,7 +208,11 @@ function bubble_SortMM()
                 let hider = function () {
                     let img = document.getElementsByTagName("img")
                     for ( i=0; i<img.length;i++ ){
-                        img[i].classList.add("hider")
+                        if ( img[i].classList.contains('hider') ) {
+                            img[i].classList.remove("hider")
+                          } else {
+                            img[i].classList.add("hider")
+                          }
 
                     }
                 }
